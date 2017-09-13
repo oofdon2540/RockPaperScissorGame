@@ -24,13 +24,11 @@ public class RockPaperScissorGame {
             int botPick = game.getRandom();
             
             System.out.print("Rock, Paper or Scissor?: ");
-         try{   
+            
             String takeIn = scan.nextLine();
             game.isComparing(takeIn,botPick);
             game.displayGamePick();
-         }catch(IllegalArgumentException iae){
-            System.out.printf("Please type in Rock, Paper or Scissor", iae.getMessage());
-         }
+        
        }
     }   
 }

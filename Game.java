@@ -23,6 +23,10 @@ public class Game {
         playerScore = 0;
         rnd = 0;
     }
+    @Override
+    public String toString(){
+      return String.format("You are playing "+game+" game");  
+    }
   
     public int getRandom() {
         int rnd = random.nextInt(3) + 1;
